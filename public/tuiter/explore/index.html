@@ -3,197 +3,453 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/89f253fa6e.js" crossorigin="anonymous"></script>
     <link href="index.css" rel="stylesheet"/>
 </head>
-<body class="wd-page-color
-wd-border">
+<body>
+<div class="container">
+    <div class="row pt-1">
+        <div class="col-3">
+            <div class="list-group">
+                <a href="https://en.wikipedia.org/wiki/Dune_(novel)"
+                   class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-t"></i>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Dune_(novel)"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                   class="list-group-item list-group-item-action  active" style="background-color: #0e6afc">
+                    <i class="fas fa-hashtag"></i>
+                    Explore
+                </a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-envelope"></i>
+                    Messages
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-bookmark"></i>
+                    Bookmarks
+                </a>
+                <a href="https://en.wikipedia.org/wiki/The_Forever_War"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-list"></i>
+                    Lists
+                </a>
+                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                   class="list-group-item list-group-item-action">
+                    <i class="fas fa-ellipsis-h"></i>
+                    More
+                </a>
+            </div>
+            <button style="background-color: #0e6afc" class=" btn btn-primary w-100 mt-1 rounded-pill">
+                Tweet
+            </button>
 
-<div id="search-area" class="wd-padding-bottom">
-    <input type = "text"
-           placeholder="Search Tuiter"
-            class="
-            wd-rounded-corners
-            wd-search-background
-            wd-white-color
-            wd-no-border
-            wd-search-longer
-            wd-search-position
-            wd-twitter-font
-            wd-search-height"/>
 
-    <a href="explore-settings.html">
-        <img src="gear.jpg" width = "24px" class="wd-gear-position">
-    </a>
+<!--
+            <ul class="list-group">
+                <li class="list-group-item active">
+                    Aliens
+                </li>
+                <li class="list-group-item">
+                    <a href="https://www.imdb.com/title/tt0088247"> Terminator</a>
+                </li>
+                <li class="list-group-item">Blade Runner</li>
+                <li class="list-group-item">Lord of the Ring</li>
+                <li class="list-group-item disabled">Star Wars</li>
+            </ul>-->
+        </div>
+        <div class="col-6">
+
+            <div class="row">
+                <div class="col-10">
+                    <div class="position-relative">
+                        <input class="form-control rounded-pill ps-5"
+                               placeholder="Search Tuiter"/>
+                        <i class="position-absolute wd-search-tuiter  fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="col-2 position-relative">
+                    <i class="fa fa-cog fa-2x" style="color: #0e6afc"></i>
+                </div>
+            </div>
+
+
+            <ul class="nav nav-tabs mt-1 mb-1">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" style="color: #6e757b">
+                        For You
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #4ca0eb">
+                        Trending
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #4ca0eb">
+                        News
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  style="color: #4ca0eb" tabindex="-1">
+                        Sports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  style="color: #4ca0eb" tabindex="-1">
+                        Entertainment
+                    </a>
+                </li>
+            </ul>
+
+            <div class="position-relative">
+                <img src="Starship-Mk1-Day.jpeg" width="100%"/>
+                <h1 class="position-absolute bottom-0 mb-2 ms-2 left-0 text-white">SpaceX's Starship</h1>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                ReactJS
+                                <i class="fa-solid fa-circle-check"></i>
+                               <span class="text-secondary fw-normal">- 2h</span>
+                            </div>
+                            <div class="fw-bolder">
+                                React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="react-512.jpg" height="100px">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="fw-bolder">
+                                JavaScript
+                            </span>
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <span class="text-secondary">- 2h </span>
+
+                            <div class="fw-bolder">
+                                JavaScript is a programming language that can run on browsers as well as desktops.
+                            </div>
+                            <div class="fw-normal text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img src="javascript_original_logo_icon_146455.png" class="rounded-3 float-end" height="100px" width="100px">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                jQuery
+                            </div>
+                            <div class="fw-normal text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="jquery-10-1175155.png" height="100px">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                NodeJS
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary fw-normal">- 2h</span>
+                            </div>
+                            <div class="fw-normal text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="Screenshot%202022-10-06%20at%2001-04-08%20Node%20js%20emblem%20vector%20image%20on%20VectorStock.png" height="100px">
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="col-3 fw-bolder">
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="rounded-circle float-end" src="Java-Emblem.jpg" width="50" height="50">
+                        </div>
+                        <div class="col-4 float-start">
+                            <div class="fw-bolder">
+                                Java <i class="fa-sharp fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="text-secondary">
+                                @Java
+                            </div>
+
+                        </div>
+                        <div class="fw-bolder col-4 float-end">
+                            <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">
+                                Follow
+                            </button>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <span class="fw-bolder">
+                                JavaScript
+                            </span>
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span class="text-secondary">- 2h </span>
+
+                            <div class="fw-bolder">
+                                JavaScript is a programming language that can run on browsers as well as desktops.
+                            </div>
+                            <div class="fw-normal text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img src="javascript_original_logo_icon_146455.png" class="rounded-3 float-end" height="100px" width="100px">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                jQuery
+                            </div>
+                            <div class="fw-normal text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="jquery-10-1175155.png" height="100px">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div class="fw-bolder">
+                                NodeJS
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text-secondary fw-normal">- 2h</span>
+                            </div>
+                            <div class="fw-normal text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img class="float-end" src="Screenshot%202022-10-06%20at%2001-04-08%20Node%20js%20emblem%20vector%20image%20on%20VectorStock.png" height="100px">
+                        </div>
+                    </div>
+                </li>
+
+                <div class="list-group pt-1">
+                     <a href="https://en.wikipedia.org/wiki/Dune_(novel)"
+                                       class="list-group-item list-group-item-action">
+                                        Who to Follow
+
+                                    </a>
+
+
+                                    <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                                       class="list-group-item list-group-item-action">
+                                        <img src="java.png" width="50px" height="50px" class="rounded-circle col-2 float-start">
+                                        <div class="col-3">
+                                        <div class="float-start">
+                                            Java
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <div class="float-start">@Java</div>
+                                        </div>
+                                        <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill col-4 float-start">
+                                            Follow
+                                        </button>
+                                    </a>
+                                    <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+                                       class="list-group-item list-group-item-action">
+                                        <img src="rel.jpg" width="50px" height="50px" class="rounded-circle">
+                                        Relativity Space
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">
+                                            Follow
+                                        </button>
+                                    </a>
+                                    <a href="https://en.wikipedia.org/wiki/The_Forever_War"
+                                       class="list-group-item list-group-item-action">
+                                        <img src="virgin-group-vector-logo.png" width="50px" height="50px" class="rounded-circle">
+                                        Virgin Galactic
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">
+                                            Follow
+                                        </button>
+                                    </a>
+                                    <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+                                       class="list-group-item list-group-item-action">
+                                        <img src="NASA_logo.svg.png" width="50px" height="50px" class="rounded-circle">
+                                        NASA
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">
+                                            Follow
+                                        </button>
+                                    </a>
+                                    <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                                       class="list-group-item list-group-item-action">
+                                        <img src="Tesla_T_symbol.svg.png" width="50px" height="50px" class="rounded-circle">
+                                        Tesla
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">
+                                            Follow
+                                        </button>
+                                    </a>
+
+                                </div>
+            </ul>
+
+<!--           <div class="list-group pt-1">-->
+<!--                <a href="https://en.wikipedia.org/wiki/Dune_(novel)"-->
+<!--                   class="list-group-item list-group-item-action">-->
+<!--                    Who to Follow-->
+
+<!--                </a>-->
+
+
+<!--                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"-->
+<!--                   class="list-group-item list-group-item-action">-->
+<!--                    <img src="java.png" width="50px" height="50px" class="rounded-circle float-start">-->
+<!--                    <div>-->
+<!--                        Java-->
+<!--                        <i class="fa-solid fa-circle-check"></i>-->
+<!--                    </div>-->
+<!--                    <div>@Java</div>-->
+<!--                    <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-start">-->
+<!--                        Follow-->
+<!--                    </button>-->
+<!--                </a>-->
+<!--                <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"-->
+<!--                   class="list-group-item list-group-item-action">-->
+<!--                    <img src="rel.jpg" width="50px" height="50px" class="rounded-circle">-->
+<!--                    Relativity Space-->
+<!--                    <i class="fa-solid fa-circle-check"></i>-->
+<!--                    <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">-->
+<!--                        Follow-->
+<!--                    </button>-->
+<!--                </a>-->
+<!--                <a href="https://en.wikipedia.org/wiki/The_Forever_War"-->
+<!--                   class="list-group-item list-group-item-action">-->
+<!--                    <img src="virgin-group-vector-logo.png" width="50px" height="50px" class="rounded-circle">-->
+<!--                    Virgin Galactic-->
+<!--                    <i class="fa-solid fa-circle-check"></i>-->
+<!--                    <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">-->
+<!--                        Follow-->
+<!--                    </button>-->
+<!--                </a>-->
+<!--                <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"-->
+<!--                   class="list-group-item list-group-item-action">-->
+<!--                    <img src="NASA_logo.svg.png" width="50px" height="50px" class="rounded-circle">-->
+<!--                    NASA-->
+<!--                    <i class="fa-solid fa-circle-check"></i>-->
+<!--                    <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">-->
+<!--                        Follow-->
+<!--                    </button>-->
+<!--                </a>-->
+<!--                <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"-->
+<!--                   class="list-group-item list-group-item-action">-->
+<!--                    <img src="Tesla_T_symbol.svg.png" width="50px" height="50px" class="rounded-circle">-->
+<!--                    Tesla-->
+<!--                    <i class="fa-solid fa-circle-check"></i>-->
+<!--                    <button style="background-color: #0e6afc" class=" btn btn-primary w-10 mt-1 rounded-pill float-end">-->
+<!--                        Follow-->
+<!--                    </button>-->
+<!--                </a>-->
+
+<!--            </div>-->
+        </div>
+
+    </div>
+
+
+    <!--
+
+       <h1>Explore</h1>
+       <input placeholder="Search Tuiter"/>
+       &#x2699;
+       <ul class="wd-nav-tabs">
+           <li class="wd-selected">For you</li>
+           <li>Trending</li>
+           <li>COVID-19</li>
+           <li class="wd-selected">News</li>
+           <li>Sports</li>
+       </ul>
+       <div>
+           <h3>Trending in Science</h3>
+           <h1>Starship</h1>
+           <h3>55.5K views</h3>
+       </div>
+       <div>
+           <h3>The NY Times</h3>
+           <h1>CNN's Cuomo Conundrum</h1>
+           <h3>55.5K views</h3>
+                     <img src="../../labs/a2/teslabot.jpg"/>-->
 </div>
 
-<div class="wd-inline">
-    <ul class="wd-no-bullet-points">
-        <li class="wd-float-li
-                    wd-menu-item-width">
-            <a href="../for-you.html"
-               class="wd-twitter-blue
-                      wd-plain-text
-                       wd-twitter-font
-                        wd-bold-text
-                        wd-for-you-padding
-                        wd-menu-spacing
-                        wd-link-font-size">
-                For you
-            </a>
-        </li>
-
-        <li class="wd-float-li
-                    wd-menu-item-width">
-            <a href="../trending.html"
-            class="wd-unhighlighted-text
-                    wd-plain-text
-                       wd-twitter-font
-                        wd-bold-text
-                        wd-menu-spacing
-                        wd-link-font-size">Trending</a>
-        </li>
-
-        <li class="wd-float-li
-                    wd-menu-item-width">
-            <a href="../covid.html"
-               class="wd-unhighlighted-text
-                    wd-plain-text
-                       wd-twitter-font
-                        wd-bold-text
-                        wd-menu-spacing
-                        wd-link-font-size">COVID-19</a>
-        </li>
-
-        <li class="wd-float-li
-                    wd-menu-item-width">
-            <a href="../news.html"
-               class="wd-unhighlighted-text
-                    wd-plain-text
-                       wd-twitter-font
-                        wd-bold-text
-                        wd-menu-spacing
-                        wd-link-font-size">News</a>
-        </li>
-
-        <li class="wd-float-li
-                    wd-menu-item-width">
-            <a href="../sports.html"
-               class="wd-unhighlighted-text
-                    wd-plain-text
-                       wd-twitter-font
-                        wd-bold-text
-                        wd-menu-spacing
-                        wd-link-font-size">Sports</a>
-        </li>
-
-        <li class="wd-float-li
-                    wd-menu-item-width">
-            <a href="../entertainment.html"
-               class="wd-unhighlighted-text
-                    wd-plain-text
-                       wd-twitter-font
-                        wd-bold-text
-                        wd-menu-spacing
-                        wd-link-font-size">Entertainment</a>
-        </li>
-    </ul>
-</div>
-
-<div class="wd-bottom-border
-wd-padding-left
-wd-top-border">
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">
-        Trending in Science
-    </p>
-    <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13">Starship</p>
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">55.5K Tweets</p>
-</div>
-
-<div class="wd-bottom-border wd-padding-left">
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">Sports &middot; Trending</p>
-    <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13">Joe Rogan</p>
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">5,218 Tweets</p>
-</div>
-
-<div class="wd-bottom-border
-            wd-padding-left">
-    <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13
-wd-inline">The New York Times </p>
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13
-wd-inline">&middot; Yesterday</p>
-    <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-    <img src = "0405JPBENSMITH-print-superJumbo-v2.jpg"
-    class="wd-d-thumb
-wd-inline">
-</div>
-
-<div class="wd-bottom-border
-            wd-padding-left">
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">
-        COVID-19 &middot; LIVE
-    </p>
-    <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13"> COVID-19: News and updates for Massachusetts</p>
-    <img src="Banner_MA-Mosaic_01_1920x1080_0.jpg"
-         class="wd-d-thumb
-wd-inline">
-</div>
-
-<div class="wd-bottom-border
-            wd-padding-left">
-            <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13
-                wd-inline">Bloomberg Opinion </p>
-
-            <p class="wd-normal-grey-text
-                        wd-twitter-font
-                        wd-font-13
-                        wd-inline">&middot; Yesterday</p>
-
-            <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13">Thinking about getting a booster? Read this first.</p>
-
-            <img src = "E8DXyqGXoAYFLKM.jpg"
-            class="wd-d-thumb
-wd-inline">
-</div>
-
-<div class="wd-bottom-border
-wd-padding-left">
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">Trending in United States</p>
-    <p class="wd-bold-white
-                wd-twitter-font
-                wd-font-13">Wonder Bread</p>
-    <p class="wd-normal-grey-text
-                wd-twitter-font
-                wd-font-13">1,259 Tweets</p>
-</div>
-
-</div>
 </body>
 </html>
