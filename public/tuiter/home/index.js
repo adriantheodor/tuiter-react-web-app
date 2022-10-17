@@ -1,6 +1,6 @@
-import NavigationSidebar from './NavigationSidebar/index.js';
-import WhoToFollowList from "./WhoToFollowList/index.js";
-import ExploreComponent from "./ExploreScreen/ExploreComponent.js";
+import NavigationSidebar from '../home/NavigationSidebar/index.js';
+import PostList from "./PostList";
+import PostSummaryList from "../explore/PostSummaryList/index.js";
 /*
 import WhoToFollowListItem from "../WhoToFollowList/index.js";
 import WhoToFollowList from "../WhoToFollowList/index.js";
@@ -18,10 +18,10 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
                 ${NavigationSidebar()}
             </div>
             <div class="col-sm-10 col-md-7 col-xl-7 col-xxl-6">
-               ${ExploreComponent()}
+               ${PostList()}
             </div>
             <div class="col-md-3 col-xl-3 col-xxl-4">   
-            ${WhoToFollowList()}
+            ${PostSummaryList()}
             </div>
         </div>
 `);
