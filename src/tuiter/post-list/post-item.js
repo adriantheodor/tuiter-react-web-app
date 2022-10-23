@@ -1,4 +1,5 @@
 import React from "react";
+import ConditionalPicture from "./conditional-photo";
 import "./index.css";
 const PostItem = (
     {
@@ -17,7 +18,8 @@ const PostItem = (
             "partOfThread": true,
             "avatarImage": "TheTitos.jpeg",
             "isVerified": true,
-            "image": "tesla.png"
+            "image": "tesla.png",
+            "postHasImage": true
         }
     }
 ) => {
@@ -48,6 +50,7 @@ const PostItem = (
 
                             <i className="bi
                                       bi-patch-check-fill
+                                      m-1
                                       wd-blue
 
                                       "></i>
@@ -67,12 +70,16 @@ const PostItem = (
                                     ms-3
                                     ">
                         {post.title}
-                        <img width={70}
-                             className="wd-round"
-                             src={`../images/${post.image}`}/>
+
+
+                        <ConditionalPicture/>
+
+
                     </div>
 
-                    <div className="row">
+                    <div className="row
+                                    mt-2
+                                    ms-3">
                         <div className="col-3
                                         text-secondary">
                             <span>

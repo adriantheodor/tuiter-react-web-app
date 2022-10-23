@@ -13,7 +13,9 @@
     "partOfThread": true,
     "avatarImage": "spacex.png",
     "isVerified": true,
-    "image": "titos.png" },
+    "image": "titos.png",
+    "postHasImage": true},
+
 
   { "_id": 432,
     "topic": "Space",
@@ -26,7 +28,8 @@
     "avatarImage": "musk_400x400.jpg",
     "commentNumber": 5346,
     "retweetNumber": 1601,
-    "likeNumber": "19.2K"},
+    "likeNumber": "19.2K",
+    "postHasImage": false},
 
   {
     "_id": 543,
@@ -36,6 +39,7 @@
     "handle": "SpaceX",
     "title": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage -> starlink.com/rv",
     "time": "16h",
-    "avatarImage": "spacex.png"
+    "avatarImage": "spacex.png",
+    "postHasImage": false
   }
 ]
