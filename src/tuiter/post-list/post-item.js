@@ -65,9 +65,10 @@ const PostItem = (
                     </div>
 
 
-                    <div className="row">
+                    <div className="row rounded-2">
                         <img width={70}
-                             className="rounded-circle"
+                             className="rounded-2
+                                        m-1"
                              src={`../images/${post.image}`}/>
 
                     </div>

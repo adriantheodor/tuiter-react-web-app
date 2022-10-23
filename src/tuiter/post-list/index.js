@@ -4,7 +4,7 @@ import PostItem from "./post-item.js";
 
 const PostSummaryList = () => {
     return(
-        <ul className="list-group">
+        <ul className="list-group" >
             {
                 postsArray.map(post =>
                     <PostItem

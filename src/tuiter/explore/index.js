@@ -42,7 +42,8 @@ const ExploreComponent = () => {
             </ul>
             <div className="position-relative
                             mb-2">
-                <img src="../../images/musk_400x400.jpg"
+                <img src="public/images/starship.png"
+                     alt="Picture of a rocket being launched"
                      className="w-100"/>
                 <h1 className="position-absolute
                                wd-nudge-up
