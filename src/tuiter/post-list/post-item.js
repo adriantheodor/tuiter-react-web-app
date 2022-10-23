@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 const PostItem = (
     {
         post = {
@@ -26,26 +27,29 @@ const PostItem = (
             <div className="row">
 
 
-                <div className="col-2">
+                <div className="col-1">
 
-                    <img width={70}
+                    <img width={50}
                          className="rounded-circle"
                          src={`/images/${post.avatarImage}`}/>
 
                 </div>
 
 
-                <div className="col-10">
+                <div className="col-11
+                                ps-1
+                                ">
 
 
-                    <div className="row">
+                    <div className="row ms-1
+                                    ">
                         <span className="fw-bolder">
                             {post.userName}
 
                             <i className="bi
                                       bi-patch-check-fill
                                       wd-blue
-                                      m-1
+
                                       "></i>
 
                             <span className="text-secondary
@@ -60,19 +64,13 @@ const PostItem = (
                     </div>
 
                     <div className="row
-                                    m-1">
+                                    ms-3
+                                    ">
                         {post.title}
-                    </div>
-
-
-                    <div className="row rounded-2">
                         <img width={70}
-                             className="rounded-2
-                                        m-1"
+                             className="wd-round"
                              src={`../images/${post.image}`}/>
-
                     </div>
-
 
                     <div className="row">
                         <div className="col-3
@@ -81,7 +79,7 @@ const PostItem = (
                                 <i className="bi
                                               bi-chat
                                               text-secondary
-                                              m-1"></i>
+                                              m-2"></i>
                                 {post.commentNumber}
                             </span>
 
@@ -92,7 +90,7 @@ const PostItem = (
                             <i className="bi
                                               bi-repeat
                                               text-secondary
-                                              m-1"></i>
+                                              m-2"></i>
                             {post.retweetNumber}
                         </div>
 
@@ -101,7 +99,7 @@ const PostItem = (
                             <i className="bi
                                               bi-heart
                                               text-secondary
-                                              m-1"></i>
+                                              m-2"></i>
                             {post.likeNumber}
 
                         </div>
@@ -111,7 +109,7 @@ const PostItem = (
                             <i className="bi
                                               bi-upload
                                               text-secondary
-                                              m-1"></i>
+                                              m-2"></i>
                         </div>
                     </div>
 
