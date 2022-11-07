@@ -25,39 +25,28 @@ const PostItem = (
 ) => {
     return (
         <li className="list-group-item">
-
             <div className="row">
-
-
                 <div className="col-1">
-
                     <img width={50}
                          className="rounded-circle"
-                         src={`/images/${post.avatarImage}`}/>
-
+                         src={`/images/${post.avatarImage}`}
+                         alt="Profile"/>
                 </div>
-
-
                 <div className="col-11
                                 ps-1
                                 ">
-
-
                     <div className="row ms-1
                                     ">
                         <span className="fw-bolder">
                             {post.userName}
-
                             <i className="bi
                                       bi-patch-check-fill
                                       m-1
                                       wd-blue
 
                                       "></i>
-
                             <span className="text-secondary
                                              fw-normal">@{post.handle} · {post.time}</span>
-
                             <span className="float-end">
                                 <i className="bi
                                               bi-three-dots
@@ -65,18 +54,12 @@ const PostItem = (
                             </span>
                         </span>
                     </div>
-
                     <div className="row
                                     ms-3
                                     ">
                         {post.title}
-
-
                         <ConditionalPicture/>
-
-
                     </div>
-
                     <div className="row
                                     mt-2
                                     ms-3">
