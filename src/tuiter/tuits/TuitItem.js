@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
 import {likeTuit} from "./tuits-reducer";
 import {unlikeTuit} from "./tuits-reducer";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 
 const TuitItem = (
@@ -34,7 +34,7 @@ const TuitItem = (
     }
 
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     const unlikeTuitHandler = (tuit) => {

@@ -1,4 +1,5 @@
 import React from "react";
+import {updateTuitThunk} from "../../../services/tuits-thunks";
 const TuitStatsItem = (
     {
         tuit = {
@@ -32,7 +33,11 @@ const TuitStatsItem = (
                 </div>
 
                 <div className="col-3">
-                    <div> {tuit.likes}</div>
+                    Likes: {tuit.likes}
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...tuit,
+                        likes: tuit.likes + 1
+                    }))} className="bi bi-heart-fill me-2 text-danger"></i>
                 </div>
 
                 <div className="col-3">

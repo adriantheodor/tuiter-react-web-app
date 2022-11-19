@@ -2,19 +2,18 @@ import React from "react";
 import {useSelector} from "react-redux";
 
 
-const ProfileComponent = () => {
+const EditProfile = () => {
     const currentUser = useSelector((state) => state.currentUser)
     return(
         <>
-            {currentUser.editing},
             <h4>Profile Screen</h4>
             <div className="row">
-            <button className="btn col-2">
-                <i className="bi bi-arrow-left"></i>
-            </button>
+                <button className="btn col-2">
+                    <i className="bi bi-arrow-left"></i>
+                </button>
                 <div className="col-10">
                     <div className="row fw-bolder">
-                    {currentUser.firstName} {currentUser.lastName}
+                        {currentUser.firstName} {currentUser.lastName}
                     </div>
                     <div className="row text-secondary">
                         {currentUser.postCount} Tweets
@@ -39,12 +38,12 @@ const ProfileComponent = () => {
                 </button>
             </div>
             <div className="row">
-            <h4 className="row fw-bolder mt-2">
-                {currentUser.firstName} {currentUser.lastName}
-            </h4>
-            <h5 className="row text-secondary">
-                {currentUser.handle}
-            </h5>
+                <h4 className="row fw-bolder mt-2">
+                    {currentUser.firstName} {currentUser.lastName}
+                </h4>
+                <h5 className="row text-secondary">
+                    {currentUser.handle}
+                </h5>
             </div>
 
             <div className="row">
@@ -52,32 +51,32 @@ const ProfileComponent = () => {
             </div>
 
             <div className="row">
-            <div className="text-secondary  col-3 float-start">
-                <div className="">
+                <div className="text-secondary  col-3 float-start">
                     <div className="">
-                        <i className="bi bi-geo float-start me-2"></i>
+                        <div className="">
+                            <i className="bi bi-geo float-start me-2"></i>
+                        </div>
+                        {currentUser.location}
                     </div>
-                {currentUser.location}
                 </div>
-            </div>
 
-            <div className="text-secondary col-3 float-start">
-                <div className="float-start">
+                <div className="text-secondary col-3 float-start">
                     <div className="float-start">
-                        <i className="bi bi-balloon float-start me-2"></i>
+                        <div className="float-start">
+                            <i className="bi bi-balloon float-start me-2"></i>
+                        </div>
+                        Born {currentUser.dateOfBirth}
                     </div>
-                    Born {currentUser.dateOfBirth}
                 </div>
-            </div>
 
-            <div className="text-secondary col-3 float-start">
-                <div className="float-start">
+                <div className="text-secondary col-3 float-start">
                     <div className="float-start">
-                        <i className="bi bi-calendar float-start me-2"></i>
+                        <div className="float-start">
+                            <i className="bi bi-calendar float-start me-2"></i>
+                        </div>
+                        Joined {currentUser.dateJoined}
                     </div>
-                    Joined {currentUser.dateJoined}
                 </div>
-            </div>
 
             </div>
 
@@ -96,4 +95,4 @@ const ProfileComponent = () => {
         </>
     );
 }
-export default ProfileComponent;
+export default EditProfile;
