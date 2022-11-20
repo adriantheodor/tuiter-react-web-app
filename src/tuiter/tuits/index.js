@@ -20,7 +20,7 @@ const TuitSummaryList = () => {
                 </li>
             }
             {
-                tuitsData.map(tuit =>
+                tuits.map(tuit =>
                     <TuitItem
                         key={tuit._id} tuit={tuit}/>)
             }
