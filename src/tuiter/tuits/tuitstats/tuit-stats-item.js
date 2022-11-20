@@ -30,7 +30,7 @@ const TuitStatsItem = (
 
                 <div className="col-3">
                     <div> {tuit.retuits}</div>
-                </div>
+                </div>n
 
                 <div className="col-3">
                     Likes: {tuit.likes}
