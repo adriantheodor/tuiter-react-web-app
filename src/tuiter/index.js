@@ -12,9 +12,12 @@ import {Provider} from "react-redux";
 import profileReducer from "./profile/profile-reducer";
 
 const store = configureStore({
-    reducer: {who: whoReducer,
-              tuitsData: tuitsReducer,
-              currentUser: profileReducer}});
+    reducer: {
+        who: whoReducer,
+        tuitsData: tuitsReducer,
+        currentUser: profileReducer,
+    },
+ });
 
 function Tuiter() { return (
     <Provider store={store}>
@@ -38,6 +41,7 @@ function Tuiter() { return (
              style={{"position": "relative"}}>
 
             <Routes>
+                <Route index element = {<HomeComponent/>}/>
                 <Route path ="home" element={<HomeComponent/>}/>
                 <Route path="explore" element={<ExploreComponent/>}/>
                 <Route path="profile" element={<ProfileComponent/>}/>

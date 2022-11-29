@@ -9,43 +9,74 @@ const NavigationSidebar = () => {
     return (
         <div className="list-group">
 
-            <a className="list-group-item">Tuiter</a>
+            <a href="/tuiter"  className="list-group-item">
+
+                <i className="bi bi-twitter me-2 wd-blue"></i>
+                <span className="d-none d-xl-inline">
+                    Tuiter
+                </span>
+
+
+            </a>
 
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-                Home
+
+                <i className="bi bi-house-fill me-2"></i>
+                <span className="d-none d-xl-inline">Home</span>
+
+
             </Link>
 
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-                Explore
+                <i className="bi bi-hash me-2"></i>
+                <span className="d-none d-xl-inline">Explore</span>
+
             </Link>
 
             <Link to="/" className="list-group-item">
-                Labs
+                <i className="bi bi-activity me-2"></i>
+                <span className="d-none d-xl-inline">Labs</span>
             </Link>
 
-            <a className={`list-group-item
+            <Link to="/tuiter/notifications" className={`list-group-item
                            ${active === 'notifications' ? 'active' : ''}`}>
-                Notifications</a>
+                <i className="bi bi-bell-fill me-2"></i>
+                <span className="d-none d-xl-inline">Notifications</span>
 
-            <a className={`list-group-item
+            </Link>
+
+            <Link to="/tuiter/messages" className={`list-group-item
                            ${active === 'messages' ? 'active' : ''}`}>
-                Messages</a>
+                <i className="bi bi-chat-fill me-2"></i>
+                <span className="d-none d-xl-inline">Messages</span>
 
-            <a className={`list-group-item
+            </Link>
+
+            <Link to="/tuiter/bookmarks" className={`list-group-item
                            ${active === 'bookmarks' ? 'active' : ''}`}>
-                Bookmarks</a>
+                <i className="bi bi-bookmark-fill me-2"></i>
+                <span className="d-none d-xl-inline">Bookmarks</span>
 
-            <a className={`list-group-item
+            </Link>
+
+            <Link to="/tuiter/lists" className={`list-group-item
                            ${active === 'lists' ? 'active' : ''}`}>
-                Lists</a>
+                <i className="bi bi-list-ul me-2"></i>
+                <span className="d-none d-xl-inline">Lists</span>
+
+            </Link>
 
             <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
-                Profile
+                <i className="bi bi-person-fill me-2"></i>
+                <span className="d-none d-xl-inline">Profile</span>
             </Link>
 
-            <a className={`list-group-item
+            <Link to="/tuiter/more" className={`list-group-item
                            ${active === 'more' ? 'active' : ''}`}>
-                More</a>
+                <i className="bi bi-plus-circle-fill me-2"></i>
+                <span className="d-none d-xl-inline">More</span>
+
+            </Link>
 
         </div>
     );
