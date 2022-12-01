@@ -33,18 +33,18 @@ const PostItem = (
     return (
         <li className="list-group-item">
             <div className={`row ${post.retweeted ?'' : 'd-none'}`}>
-                <div className="col-1 ps-5">
+                <div className="col-1">
                     <i className="bi bi-repeat"></i>
                 </div>
-                <div className="col text-muted">
+                <div className="col">
                     {post.retweetedUserName} Retweeted
                 </div>
 
             </div>
             <div className="row">
-                <div className="col-1 me-2">
+                <div className="col-1">
                     <img src={`${post.avatarIcon}`} className="rounded-circle" height={48}
-                         alt="Avatar icon"/>
+                         alt="Avatar"/>
                 </div>
                 <div className="col">
                     <div className="row">
@@ -59,21 +59,19 @@ const PostItem = (
                     </div>
                     <div className="row">
                         <div className="col">
-                            <p>{post.post}<span className="text-primary">{post.link}</span></p>
+                            <p>{post.title}<span className="text-primary">{post.link}</span></p>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col">
                             <div className={`${post.retweet?'d-none':''}`}>
-                                <img src={post.image} className="w-100 wd-post-image" alt="Post"/>
+                                <img src={post.image} className="w-100" alt="Tuit Img"/>
                             </div>
-                            <div className={`${!post.retweet?'d-none':''} wd-post-image 
-                            border
-                            border-muted p-2 pb-0`}>
+                            <div className={`${!post.retweet?'d-none':''}`}>
                                 <div className="row">
                                     <div className="col">
-                                        <img height={24} className="rounded-circle mb-1 me-1"
-                                             src={post.retweetAvatar} alt="Retweet avatar"/>
+                                        <img height={24} className="rounded-circle"
+                                             src={post.retweetAvatar} alt="Retweeter"/>
                                         <span className="fw-bolder">{post.retweetedUserName}</span>
                                         <span className="text-primary">
                                             <i className="bi bi-patch-check-fill"></i>
@@ -83,7 +81,7 @@ const PostItem = (
                                         </span>
                                     </div>
                                 </div>
-                                <div className="row mt-1 pb-0">
+                                <div className="row">
                                     <div className="col">
                                         <p>{post.retweetPost}</p>
                                     </div>
@@ -92,7 +90,7 @@ const PostItem = (
 
                         </div>
                     </div>
-                    <div className="row mt-3 ms-1 text-secondary">
+                    <div className="row text-secondary">
                         <div className="col-3">
                             <div className="row">
                                 <div className="col-3">
