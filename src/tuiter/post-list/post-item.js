@@ -10,7 +10,7 @@ const PostItem = (
             "topic": "Space",
             "userName": "SpaceX",
             "handle": "SpaceX",
-            "post": "Dennis and Akiko Tito are the first two crew members on Starship's second commercial spaceflight around the Moon ⟶ <span className='color-primary'>spacex.com/updates</span>",
+            "title": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the Moon -> <a href='spacex.com/updates'>spacex.com/updates</a>",
             "time": "23h",
             "commentNumber": 595,
             "retweeted": true,
