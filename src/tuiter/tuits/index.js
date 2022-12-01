@@ -1,11 +1,9 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {likeTuit, unlikeTuit} from "./tuits-reducer";
-import {useState} from "react";
 import TuitItem from "./TuitItem";
 import {findTuitsThunk} from "../../services/tuits-thunks";
 
-const TuitSummaryList = () => {
+const TuitList = () => {
     const {tuits,loading} = useSelector(state => state.tuits)
     const dispatch = useDispatch();
     useEffect(() => {
@@ -20,11 +18,11 @@ const TuitSummaryList = () => {
                 </li>
             }
             {
-                tuits.map(tuit =>
+                tuits.map((tuit) =>
                     <TuitItem
                         key={tuit._id} tuit={tuit}/>)
             }
         </ul>
     );
 };
-export default TuitSummaryList;
+export default TuitList;
