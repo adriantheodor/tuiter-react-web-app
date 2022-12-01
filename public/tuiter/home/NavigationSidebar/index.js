@@ -6,8 +6,6 @@ const NavigationSidebar = (active) => {
                 wd-background-color-black">
        <a class="list-group-item" href="/public">
        <i class="fab fa-twitter"></i></a>
-       <!-- continue rest of list, e.g.,
-            Home, Explore, Notifications,  Messages, etc. -->
             
        <a class="list-group-item wd-blue-background" href="../../home/index.html">
        <i class="fa fa-home m-1 wd-blue-background">
